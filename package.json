@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "cypress-dev": "cypress open"
+  },
   "dependencies": {
     "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.0"
   }
 }
