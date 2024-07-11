@@ -64,6 +64,8 @@ function checkForMatch() {
 }
 
 function disableCards() {
+    firstCard.classList.add('matched');
+    secondCard.classList.add('matched');
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
 
@@ -78,7 +80,6 @@ function unflipCards() {
         resetBoard();
     }, 1500);
 }
-
 function resetBoard() {
     [firstCard, secondCard, lockBoard] = [null, null, false];
 }
